@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1b2e;
+    color: #ffffff;
+}
+
+.sidebar {
+    background-color: #0b0a13;
+    height: 100vh;
+    padding: 2rem;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.main-content {
+    background-color: #131225;
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem;
+}
+
+.header, .playback-bar {
+    background-color: #f03d72;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.highlight {
+    background-color: #f03d72;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}

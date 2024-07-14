@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex">
+    <div class="sidebar w-1/4">
+        <div class="mb-8">
+            <ul class="space-y-4">
+                <li><i class="fas fa-compass"></i> Explore</li>
+                <li><i class="fas fa-podcast"></i> Podcast</li>
+                <li><i class="fas fa-music"></i> Albums</li>
+                <li><i class="fas fa-user"></i> Artists</li>
+                <li><i class="fas fa-calendar-alt"></i> Events</li>
+            </ul>
+        </div>
+        <div class="mb-8">
+            <h3 class="text-gray-400">My Music</h3>
+            <ul class="space-y-4">
+                <li><i class="fas fa-history"></i> Recently Played</li>
+                <li><i class="fas fa-heart"></i> Favorite Songs</li>
+                <li><i class="fas fa-download"></i> Local Files</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-gray-400">Playlists</h3>
+            <ul class="space-y-4">
+                <li>My Daily Mix</li>
+                <li>Good Vibes</li>
+                <li>Tropical House</li>
+                <li>Happy Chill Good</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content flex-1 flex flex-col">
+        <div class="header flex justify-between items-center mb-8">
+            <input type="text" placeholder="Search for music, artists etc." class="flex-grow bg-transparent text-white placeholder-gray-400 p-2">
+            <div class="flex items-center">
+                <i class="fas fa-user-circle fa-2x"></i>
+                <span class="ml-2">Alex Wilson</span>
+            </div>
+        </div>
+
+        <div class="content flex flex-col space-y-8">
+            <div>
+                <h2 class="text-2xl">New Albums</h2>
+                <div class="flex space-x-4 mt-4">
+                    <div class="highlight p-4">
+                        <img src="https://placehold.co/150x150" alt="Album cover" class="rounded-md">
+                        <p>Ghostmusic</p>
+                        <p>Devna</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/150x150" alt="Album cover" class="rounded-md">
+                        <p>Freaking Me Out</p>
+                        <p>Ava Max</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/150x150" alt="Album cover" class="rounded-md">
+                        <p>Electro Collection</p>
+                        <p>Deep City</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/150x150" alt="Album cover" class="rounded-md">
+                        <p>The Alley</p>
+                        <p>Currice</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/150x150" alt="Album cover" class="rounded-md">
+                        <p>Party Dancer</p>
+                        <p>DJ Khaled</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/150x150" alt="Album cover" class="rounded-md">
+                        <p>Summer Vibes</p>
+                        <p>Ghostmusic</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="w-1/2">
+                    <h2 class="text-2xl">Top Charts</h2>
+                    <ul class="space-y-2 mt-4">
+                        <li class="highlight flex justify-between items-center p-2">
+                            <span>Go Away Girl Mix</span>
+                            <span>3:28</span>
+                            <i class="fas fa-heart"></i>
+                        </li>
+                        <li class="flex justify-between items-center p-2">
+                            <span>Abstract Walking</span>
+                            <span>2:47</span>
+                            <i class="fas fa-heart"></i>
+                        </li>
+                        <li class="flex justify-between items-center p-2">
+                            <span>Hotline Miami Mix</span>
+                            <span>2:52</span>
+                            <i class="fas fa-heart"></i>
+                        </li>
+                        <li class="flex justify-between items-center p-2">
+                            <span>Getting Over You</span>
+                            <span>4:15</span>
+                            <i class="fas fa-heart"></i>
+                        </li>
+                        <li class="flex justify-between items-center p-2">
+                            <span>The Subway Song</span>
+                            <span>3:01</span>
+                            <i class="fas fa-heart"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2">
+                    <h2 class="text-2xl">Playlists</h2>
+                    <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div>
+                            <img src="https://placehold.co/100x100" alt="Playlist cover" class="rounded-md">
+                            <p>Summer Vibes</p>
+                        </div>
+                        <div>
+                            <img src="https://placehold.co/100x100" alt="Playlist cover" class="rounded-md">
+                            <p>Mind Right</p>
+                        </div>
+                        <div>
+                            <img src="https://placehold.co/100x100" alt="Playlist cover" class="rounded-md">
+                            <p>Ultimate Indie</p>
+                        </div>
+                        <div>
+                            <img src="https://placehold.co/100x100" alt="Playlist cover" class="rounded-md">
+                            <p>Jazzy Dinner</p>
+                        </div>
+                        <div>
+                            <img src="https://placehold.co/100x100" alt="Playlist cover" class="rounded-md">
+                            <p>Pop Hits</p>
+                        </div>
+                        <div>
+                            <img src="https://placehold.co/100x100" alt="Playlist cover" class="rounded-md">
+                            <p>Roots Rising</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="playback-bar fixed bottom-0 left-0 right-0 flex justify-between items-center p-4">
+            <img src="https://placehold.co/50x50" alt="Current track cover" class="rounded-md">
+            <div class="flex flex-col items-center">
+                <span>Go Away Girl Mix</span>
+                <span>Swanky Tunes</span>
+            </div>
+            <i class="fas fa-waveform fa-2x"></i>
+        </div>
+    </div>
+</body>
+
+</html>
