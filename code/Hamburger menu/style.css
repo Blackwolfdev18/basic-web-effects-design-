@@ -39,3 +39,67 @@ body {
   .logo label {
     display: none;
   }
+  .items {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item {
+    width: 100px;
+    padding: 10px 18px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5mm;
+    font-family: poppins;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+  .item:hover {
+    background: rgba(100, 100, 100, 0.5);
+  }
+  @media screen and (max-width: 650px) {
+    .menu {
+      flex-direction: column;
+    }
+    .menu .logo {
+      width: 100%;
+    }
+    .menu .logo label {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      width: 30px;
+      height: 30px;
+    }
+    .menu .logo label::before {
+      position: absolute;
+      content: "menu";
+      font-family: "Material Icons";
+      top: 0;
+      left: 0;
+      font-size: 30px;
+    }
+    .menu .items {
+      width: 100%;
+      flex-direction: column;
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+    }
+    .menu .item {
+      width: 100%;
+      padding: 15px;
+      border-radius: 0;
+      border-top: 0.5mm solid rgb(52, 53, 71);
+    }
+    #menu:checked ~ .items {
+      max-height: 500px;
+    }
+    #menu:checked ~ .logo label::before {
+      content: "close";
+    }
+  }
