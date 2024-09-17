@@ -109,3 +109,88 @@ body {
     border: 1px solid rgba(209, 213, 219, 0.3);
     margin-bottom: 5px;
   }
+  .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10mm;
+  }
+  .title {
+    width: 200px;
+    height: 30px;
+    border-radius: 1mm;
+    background: rgba(50, 50, 50, 0.7);
+    padding: 1px 5px;
+    position: relative;
+  }
+  .title img {
+    width: 25px;
+    height: 25px;
+    border-radius: 0.5mm;
+    margin-right: 5px;
+  }
+  .details {
+    width: 100%;
+  }
+  .name {
+    font-size: 11px;
+  }
+  .producer {
+    font-size: 8px;
+  }
+  .title::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: white;
+    border-radius: 0.2mm;
+    animation: progress 10s linear infinite;
+  }
+  @keyframes progress {
+    to {
+      width: 100%;
+    }
+  }
+  .right {
+    color: white;
+  }
+  .right .head {
+    width: 320px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    background: rgba(200, 200, 200, 0.3);
+  }
+  .tile {
+    font-family: poppins;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 8mm;
+    cursor: pointer;
+  }
+  .tile.active {
+    background: linear-gradient(
+      145deg,
+      rgb(110, 110, 110),
+      rgb(100, 100, 100)
+    );
+    box-shadow: 2px 2px 4px rgba(150, 150, 150, 0.6),
+      -2px -2px 4px rgba(150, 150, 150, 0.6);
+  }
+  .playlist {
+    width: 320px;
+    height: fit-content;
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 5mm;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
