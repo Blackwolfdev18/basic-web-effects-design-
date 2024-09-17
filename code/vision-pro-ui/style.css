@@ -235,3 +235,8 @@ body {
     rgb(100, 100, 100)
   );
 }
+.icons span:hover,
+.tile:hover,
+.list-video:hover {
+  background: rgba(100, 100, 100, 0.6);
+}
