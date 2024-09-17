@@ -43,3 +43,69 @@ body {
     justify-content: center;
     margin-bottom: 20px;
   }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .icons span {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 50%;
+    font-size: 17px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .icons .button {
+    background: linear-gradient(
+      145deg,
+      rgb(110, 110, 110),
+      rgb(100, 100, 100)
+    );
+    box-shadow: 2px 2px 4px rgba(150, 150, 150, 0.6),
+      -2px -2px 4px rgba(150, 150, 150, 0.6);
+    font-size: 14px;
+  }
+  .url,
+  .title {
+    width: 250px;
+    height: 25px;
+    backdrop-filter: blur(11px) saturate(23%);
+    -webkit-backdrop-filter: blur(11px) saturate(23%);
+    background: rgba(50, 50, 50, 0.5);
+    border-radius: 8mm;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 11px;
+    font-family: "plus jakarta sans";
+  }
+  .url span {
+    font-size: 15px;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .link span {
+    margin-right: 2px;
+    font-size: 13px;
+  }
+  .video {
+    width: 740px;
+    height: 415px;
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10mm;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin-bottom: 5px;
+  }
