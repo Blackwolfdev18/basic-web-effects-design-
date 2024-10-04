@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div class="table">
+          <div class="inputs">
+            <span class="inputf">
+              <input type="number" placeholder="No of Rows" id="rows" />
+              <span class="label">No of Rows</span>
+            </span>
+  
+            <span class="inputf">
+              <input type="number" placeholder="No of Cols" id="cols" />
+              <span class="label">No of Cols</span>
+            </span>
+  
+            <button type="button" onclick="checkValues()">Create</button>
+          </div>
+  
+          <div class="table-container">
+            <div class="title">Dynamic Table</div>
+            <table id="table"></table>
+            <button type="button" id="set-vals" onclick="setVals()">Enter</button>
+          </div>
+        </div>
+      </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
