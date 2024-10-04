@@ -41,3 +41,18 @@ function checkValues() {
     document.getElementById("set-vals").style.display = "block";
     document.querySelector(".table-container").style.display = "block";
   }
+
+  function setVals() {
+    var table = document.getElementById("table");
+    let rows = table.rows.length;
+    let cols = table.rows[0].cells.length;
+    let vals = document.querySelectorAll(".cell-val");
+    let k = 0;
+    for (var i = 0; i < rows; i++) {
+      for (var j = 0; j < cols; j++) {
+        table.rows[i].cells[j].innerText = vals[k].value;
+        k = k + 1;
+      }
+    }
+    document.getElementById("set-vals").style.display = "none";
+  }
